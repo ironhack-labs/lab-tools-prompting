@@ -2,7 +2,7 @@
 
 # Lab | Tools prompting
 
-## Getting Started
+## Getting Started edit
 
 Follow the instructions provided in the notebook.
 
