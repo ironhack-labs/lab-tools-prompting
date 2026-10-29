@@ -12,6 +12,24 @@ Read the instructions for each cell and provide your answers. Make sure to test 
 
 - Downloaded notebook with your responses to each of the exercises.
 
+## Run the completed notebook
+
+The solution adds three tools (temperature conversion, text reversal, and word
+counting), model-driven examples, validation checks, and a reflection. It uses
+plain text prompting through Ollama rather than native tool calls.
+
+Install the Python dependencies with `python -m pip install -r requirements.txt`.
+Start Ollama and download the model with `ollama pull qwen3:4b` if needed.
+The model can be changed with the `OLLAMA_MODEL` environment variable.
+
+Run and save all cell outputs:
+
+```powershell
+python -m nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=360 lab-tools-prompting.ipynb
+```
+
+Or open `lab-tools-prompting.ipynb` in Jupyter and select **Run All**.
+
 ## Submission
 
 - Upon completion, add your deliverables to git. 
